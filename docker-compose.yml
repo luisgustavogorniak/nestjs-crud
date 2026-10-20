@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: nest
+      POSTGRES_PASSWORD: nest
+      POSTGRES_DB: nest_crud
+    ports:
+      - "5434:5432"
